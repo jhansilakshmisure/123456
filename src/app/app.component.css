@@ -1,0 +1,20 @@
+#image-container{
+    width: 48%;
+    height:55%;
+    top:5%;
+    left: 26%;
+    background-image: url(./../assets/images/img6.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+#my-class{
+       font-size:  60px;
+       font-weight: bold;
+       font-style:italic;
+       color:black;
+       margin-top: 100px;
+       margin-left: 480px;
+
+
+}

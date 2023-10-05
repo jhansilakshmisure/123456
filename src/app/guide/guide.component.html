@@ -1,0 +1,297 @@
+<nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+       
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="color: aliceblue;" class="nav-link active" aria-current="page" routerLink="/guide">Guidence</a>
+          </li>
+           <li class="nav-item">
+             <a style="color: aliceblue;" class="nav-link active" aria-current="page" routerLink="/about">About us</a>
+           </li>
+           
+           
+  
+           <li class="nav-item dropdown">
+             <a  style="color: aliceblue;"class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               SCANNING
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" routerLink="/insert">insert</a></li>
+               <li><a class="dropdown-item" routerLink="/read">read</a></li>
+               <li><a class="dropdown-item" routerLink="/update">Update</a></li>
+               <li><a class="dropdown-item" routerLink="/delete">delete</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+            <a  style="color: aliceblue;"class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Doctor
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/doctorinsert">insert</a></li>
+              <li><a class="dropdown-item" routerLink="/opread">read</a></li>
+              
+            </ul>
+          </li>
+          <li>
+            <a style="color: aliceblue;" class="nav-link active a" id="log" aria-current="page" (click)="onLogout()">Logout</a>
+        
+       </li>
+         </ul>
+         </div>
+    </div>
+    </nav>
+  
+  
+  
+  
+  
+   
+  <router-outlet></router-outlet>
+  
+<div class="section">
+    <div class="text">
+        <h1>Diagnosis and prevention of diabetes </h1>
+        <p>
+            Encourage the use of the more accessible point-of-care A1C testing to offer more rapid and available
+             screening and diagnosis of diabetes rather than a lab-drawn A1C, which can delay diagnosis and
+              discussion of treatment for months. With a quick A1C result in hand, a provider can discuss
+               the A1C result in real time and use shared decision-making to discuss, if deemed necessary, 
+               a person’s next step in care. This recommendation came with the message to healthcare providers
+                to be more aggressive about preventing type 2 diabetes and diagnosing prediabetes and early 
+                type 2 diabetes.
+            
+        </p>
+    </div>
+    <img src="\assets\images\d1.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Management of people with prediabetes and high risk for type 2 diabetes </h1>
+        <p><span>-></span>
+            Emphasize the use of more intensive approaches in the care of people at high risk of developing 
+            diabetes. This includes people with a BMI ≥35, those with higher-than-normal glucose levels and A1C, 
+            as well as people with a history of gestational diabetes.<br>
+            <span>-></span> 
+            Consider a multi-pronged approach to management that includes weight management, slowing disease
+             progression, reducing cardiovascular risk factors, and using medications to adequately achieve and
+              maintain management goals.<br>
+              <span>-></span> 
+              In people who have had a stroke or have evidence of insulin resistance and prediabetes, consider
+               prescribing the glucose-lowering medication pioglitazone. This medication can reduce the risk for 
+               stroke or heart attack as long as it can be taken without side effects. <br>
+               <span>-></span> 
+               Raise caution that the use of statin medication to improve lipid levels may, as a side effect,
+               increase the risk for type 2 diabetes. Providers are encouraged to regularly monitor glucose levels
+               in those without diabetes but not discontinue the use of statin medication because of its 
+                cardiovascular benefits.
+        </p>
+    </div>
+    <img src="assets\images\d2.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Emphasis on weight management and obesity treatment  </h1>
+        <p><span>-></span>
+            Manage obesity as a chronic disease that is progressive and often associated with medical, physical,
+             and psychosocial complications. <br>
+             <span>-></span>
+             Weight management—both weight loss and the maintenance of lost weight—is now considered just as important 
+             in prediabetes and diabetes management, as is glucose management.<br>
+             <span>-></span>
+             Documented in these standards with greater clarity is the impact of various levels of weight loss. 
+             It is noted that both smaller (~3-7%) and larger (>10%) weight loss provides improvements in glucose
+              management. More significant weight loss (up to 15%) can lead to greater health benefits that include
+               reduction in risk factors for cardiovascular or related problems, like strokes and heart attacks, as
+                well as the possibility of reversing type 2 diabetes. Four different approaches to achieve and
+                 maintain weight management should be considered to support people with obesity, including:
+                  1) healthy behavior and lifestyle changes, 2) intensive evidence-based structured weight
+                   management programs, 3) medications for weight loss, and 4) metabolic surgery.<br>
+                   <span>-></span> 
+                   Greater weight loss (up to 15%) is more achievable today with newer medications that assist
+                    with weight loss and long-term management, including tirzepatide and semaglutide.
+                     These medications are listed in the ADA medication guidelines as having “very high efficacy”
+                      for both glucose and weight management.
+        </p>
+    </div>
+    <img src="assets\images\d3.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1> Reduction of chronic kidney disease risk factors and disease management</h1>
+        <p>
+            <span>-></span>
+            With the use of SGLT2 inhibitors playing a role in protecting the health of kidneys, the levels of 
+            kidney function for which it is recommended were lowered.<br>
+            <span>-></span>
+            A newer medication, finerenone (a nonsteroidal mineralocorticoid receptor antagonist),
+             is more widely recommended in this set of Standards to reduce the progression of chronic kidney
+              disease and reduce cardiovascular events.<br>
+            <span>-></span>
+            In people with established kidney disease, more frequent monitoring of urinary albumin creatinine
+             ratio (UACR) and estimated glomerular filtration rate (eGRF)—1 to 4 times per year—is recommended,
+              based on disease severity.<br>
+              <span>-></span>
+              Criteria for referral to a nephrologist (a doctor specializing in kidneys) were broadened to include
+               people with continuously rising levels of UACR and eGFR.
+        </p>
+    </div>
+    <img src="assets\images\d1.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Screening and management of nonalcoholic fatty liver disease (NAFLD)</h1>
+        <p>
+            <span>-></span>
+            Prevalence of NAFLD is increasing among people with type 2 diabetes, but it is often not screened for 
+            or detected. Early screening and management can reduce disease risk and improve outcomes. The 
+            recommendation was made to encourage use of the FIB-4 test to screen individuals at high risk, 
+            including people with obesity, chronic kidney disease, and older age. <br>
+            <span>-></span>
+            Weight management is an important first step to managing NAFLD. The goal is to achieve at least 5% but
+             preferably 10% weight loss. However, to significantly impact the progression of NAFLD, most people
+              will need obesity management medications or weight loss surgery. In addition, the use of a GLP-1
+               receptor agonist and/or pioglitazone can further improve glucose management and lipid levels and
+                reduce fat in the liver in people with prediabetes or type 2 diabetes.
+            
+        </p>
+    </div>
+    <img src="assets\images\d2.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Neuropathy and amputation prevention, and screening for peripheral artery disease</h1>
+        <p>
+            <span>-></span>
+            The Standards recommend increased focus on the prevention of amputations with an emphasis on screening
+             for peripheral arterial disease (narrowing or blockage of the vessels that carry blood from the heart 
+             to the legs) as a means of detecting problems early. <br>
+            <span>-></span>
+            Initial screening for peripheral arterial disease should include a number of simple assessment tests and checks,
+             including lower-extremity pulses, capillary refill time, venous filling time, and other checks of blood flow.<br>
+            <span>-></span>
+            As a preventive measure, a comprehensive foot evaluation should be done at least annually and at every visit 
+            in individuals with evidence of sensory loss, prior ulceration, or a prior amputation.
+            
+        </p>
+    </div>
+    <img src="assets\images\d1.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Use and integration of diabetes technology into care </h1>
+        <p>
+            <span>-></span>
+            A strong recommendation was made for offering the use of continuous glucose monitoring (CGM) in people with
+             type 2 diabetes on basal-only insulin therapy (once-daily, long-acting insulin) in addition to people on all 
+             other types of insulin regimens. Of note is that Medicare is currently considering coverage of CGM for this 
+             population. <br>
+            <span>-></span>
+            People who use CGM should be made aware of and educated about interfering substances that can negatively impact
+             sensor accuracy. A new table lists six interfering substances. 
+            <br>
+            <span>-></span>
+            The importance of considering a person’s preference for certain diabetes devices as well as assuring that they 
+            have access to uninterrupted supplies was stated.<br>      
+            <span>-></span>
+            The relatively new FreeStyle Libre 3 CGM is now designated a real-time CGM option, whereas the FreeStyle Libre
+             1 and 2 are considered flash glucose monitoring, which requires intermittent scanning of the sensor. This real-time designation is important for reimbursement.<br>
+            <span>-></span>
+            The Standards recommend that, when hospitalized, people should be supported by their healthcare providers and 
+            others in the hospital setting to continue using their devices.<br>
+        </p>
+    </div>
+    <img src="assets\images\d2.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Incorporation of psychosocial care into diabetes care </h1>
+        <p>
+            <span>-></span>
+            The Standards more strongly promote the importance of mental well-being as part of diabetes care and 
+            access to mental health resources to support well-being. <br>
+            <span>-></span>
+            The use of psychosocial screening is advocated with referral to mental health providers or other 
+            trained healthcare providers when a person has symptoms of diabetes distress, depression, suicidality, 
+            anxiety, treatment-related fear of hypoglycemia, disordered eating, and/or diminished cognitive
+             capacity.
+        </p>
+    </div>
+    <img src="assets\images\d3.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Achieving glucose targets  </h1>
+        <p>
+            <span>-></span>
+            Healthcare providers are encouraged to help people set goals for glycemic management during 
+            appointments as one means to achieve success. <br>
+            <span>-></span>
+            A more relaxed goal for glucose targets was recommended for people with frailty and high risk for
+             hypoglycemia: >50% time in range and <1% time below range are recommended. <br>
+            <span>-></span>
+            Consider social determinants of health among one of the factors when choosing a glucose-lowering
+            medication. Metformin is mentioned as an inexpensive medication that is both safe and effective.
+        </p>
+    </div>
+    <img src="assets\images\d1.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>screening for sleep problems and achieving sleep health</h1>
+        <p>
+            <span>-></span>
+            People with diabetes and prediabetes should be screened for sleep disorders and be referred, if 
+            necessary, to a sleep specialist for management. Assessing sleep patterns and duration is considered 
+            by ADA as part of a comprehensive medical evaluation. Sleep disorders, including insomnia and 
+            obstructive sleep apnea, are risk factors for type 2 diabetes and are common in people with diabetes.<br>
+        </p>
+    </div>
+    <img src="assets\images\d2.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Advocacy for team-based diabetes care </h1>
+        <p>
+            <span>-></span>
+            An emphasis on the use of non-physician healthcare providers to provide care, counsel, and support to
+             people at risk for and with diabetes is highlighted throughout the guidelines. As part of this 
+             guidance, there is a broader recognition of the important role social determinants of health have on
+              a person’s ability to implement and continually execute their diabetes care plan. <br>
+            <span>-></span>
+            The Standards recommend that all people receive counseling in healthy lifestyle behaviors and diabetes
+             self-management education and support (DSMES). These services must be provided in culturally
+              appropriate ways based on race, ethnic/cultural background, sexual orientation, gender identity, 
+              technology access, education, literacy, and numeracy. Social determinants of health should guide the 
+              design and delivery of DSMES programs with the goal of achieving health equity across populations. <br>
+            <span>-></span>
+            It is suggested that wider delivery of DSMES may be provided through the use of telehealth and other
+             modes of technology-enabled delivery.<br>
+            <span>-></span>
+            The Standards encourage the use of community health workers, who often serve as a workforce for 
+            outreach, advocacy, social support, health education, and more. Community health workers can support
+             diabetes and cardiovascular risk factor management, especially in underserved communities and health
+              care systems.
+        </p>
+    </div>
+    <img src="assets\images\d1.jpg" alt="">
+</div>
+<div class="section">
+    <div class="text">
+        <h1>Screening for food insecurity </h1>
+        <p>
+            <span>-></span>
+            It is important that people are screened regularly for food insecurity. The Standards state that any
+             member of the diabetes healthcare team can screen for food insecurity using a two-question screening 
+             tool.<br>
+             <span>-></span>
+             The ADA suggests addressing food insecurity by seeking out and integrating community resources into 
+             primary care (for example: medically tailored meals, fruit and vegetables prescriptions, etc.) as well
+              as addressing food deserts in underserved communities.
+        </p>
+    </div>
+    <img src="assets\images\d2.jpg" alt="">
+</div>

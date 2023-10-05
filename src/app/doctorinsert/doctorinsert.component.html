@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-lg bg-success">
+  <div class="container-fluid">
+    
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav">
+        <li class="nav-item">
+          <a style="color: aliceblue;" class="nav-link active" aria-current="page" routerLink="/guide">Guidence</a>
+        </li>
+         <li class="nav-item">
+           <a style="color: aliceblue;" class="nav-link active" aria-current="page" routerLink="/about">About us</a>
+         </li>
+         
+         
+
+         <li class="nav-item dropdown">
+           <a  style="color: aliceblue;"class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             SCANNING
+           </a>
+           <ul class="dropdown-menu">
+             <li><a class="dropdown-item" routerLink="/insert">insert</a></li>
+             <li><a class="dropdown-item" routerLink="/read">read</a></li>
+             <li><a class="dropdown-item" routerLink="/update">Update</a></li>
+             <li><a class="dropdown-item" routerLink="/delete">delete</a></li>
+           </ul>
+         </li>
+         <li class="nav-item dropdown">
+          <a  style="color: aliceblue;"class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Doctor
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/doctorinsert">insert</a></li>
+            <li><a class="dropdown-item" routerLink="/dread">read</a></li>
+            
+          </ul>
+        </li>
+        <li>
+          <a style="color: aliceblue;" class="nav-link active a" id="log" aria-current="page" (click)="onLogout()">Logout</a>
+      
+     </li>
+       </ul>
+       </div>
+  </div>
+  </nav>
+
+
+
+
+
+ 
+<router-outlet></router-outlet>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Doctor Details Form</title>
+</head>
+<body>
+  <h1>Doctor Details</h1>
+
+  <div class="form-group mx-auto w-50">
+    <label for="name" class="form-label">id_no:</label><br>
+    <input type="text" id="id_no" name="id_no"  class="form-control" required  [(ngModel)]="User.id_no"><br><br>
+    <label for="name" class="form-label">Name:</label><br>
+    <input type="text" id="name" name="name" class="form-control"  required  [(ngModel)]="User.name"><br><br>
+
+    <label for="phone" class="form-label"> Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone"  class="form-control" required  [(ngModel)]="User.phone_number"><br><br>
+
+    <label for="age" class=""form-label>Age:</label><br>
+    <input type="number" id="age" name="age" class="form-control"  required  [(ngModel)]="User.age"><br><br>
+
+    <label for="experience" class="form-label">Experience:</label><br>
+    <input type="text" id="experience" name="experience" class="form-control"  required  [(ngModel)]="User.experience"><br><br>
+
+    <input type="submit" value="Insert" class="btn btn-success my-2" (click)="Insert()">
+  
+    <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+    <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+
+  </div>
+<title>Background Image Example</title>
+  <style>
+    body {
+      background-image: url(../../assets/images/img3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+ <!-- Your HTML content here -->
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,11 @@
+body{
+    background-image: url('../../assets/images/img5.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.a{
+    padding-left: 200px;
+}
+#log{
+    padding-left: 1000px
+}

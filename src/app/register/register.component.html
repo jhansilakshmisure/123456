@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        body {
+           background-image: url("regi.jpg");
+             }
+	body 
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left:25%;
+		margin-right:25%;
+		border: 1px solid #000000;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.registerbutton
+		{
+		background-color: #29a329;
+		color: white;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		text-size-adjust: bold;
+		}
+
+</style>
+</head>
+<body>
+	<form action="action.php">
+		<h1>Registration</h1>
+		<p>Please fill in this form to create an account.</p>
+		<hr>
+		
+    <form [formGroup]="RegForm"(ngSubmit)="ReginUser()">	
+    <label for="Name" class="form-label">Name:</label>
+    <input type="text" name="Name" id="Name" class="form-control"  [(ngModel)]="User.name">
+
+    <label for="number" class="form-label">number:</label>
+    <input type="number" name="Name" id="Name" class="form-control" [(ngModel)]="User.phone_number">
+
+    <label for="email" class="form-label">email:</label>
+    <input type="email" name="email" id="email" class="form-control" formControlName="user" [(ngModel)]="User.email">
+	<span style="color: red;" *ngIf="user&& user.invalid && user.touched"> user filed is not valid</span>
+
+    <label for="password" class="form-label">password:</label>
+    <input type="password" name="password" id="password" class="form-control" formControlName="password" [(ngModel)]="User.password">
+	<span style="color: red;" *ngIf="password && password.invalid && password.touched"> password filed is not valid</span>
+
+    <label for="confirm_password" class="form-label">confirm_password:</label>
+    <input type="password" name="confirm_password" id="confirm_password" class="form-control" formControlName="password" [(ngModel)]="User.confirm_password">
+    
+   <a routerLink="/login"> <button type="submit" value="Register" class="registerbutton" (click)="Register()">Register</button></a>
+   </form>
+
+		<hr>
+		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+		
+		
+  
+		
+		<p>Already have an account? <a href="#">Sign in</a>.</p>
+		
+	</form>
+
+</body>
+</html>
